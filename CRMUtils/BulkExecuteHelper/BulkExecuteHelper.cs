@@ -89,7 +89,7 @@ namespace CRMUtils.BulkExecuteHelper
                     {
                         if (Requests[numberOfBatches * this.batchSize + ii].CallBack != null)
                         {
-                            Requests[numberOfBatches * this.batchSize + ii]?.CallBack(response.Responses[ii].Response);
+                            Requests[numberOfBatches * this.batchSize + ii].CallBack(response.Responses[ii].Response);
                         }
                     }
                     batch.Requests.Clear();
