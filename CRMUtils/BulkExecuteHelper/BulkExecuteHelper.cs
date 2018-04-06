@@ -87,7 +87,10 @@ namespace CRMUtils.BulkExecuteHelper
                     ExecuteMultipleResponse response = (ExecuteMultipleResponse)service.Execute(batch);
                     for (var ii = 0 ; ii < response.Responses.Count; ii++)
                     {
-                        Requests[numberOfBatches * this.batchSize + ii]?.CallBack(response.Responses[ii].Response);
+                        if (Requests[numberOfBatches * this.batchSize + ii].CallBack != null)
+                        {
+                            Requests[numberOfBatches * this.batchSize + ii]?.CallBack(response.Responses[ii].Response);
+                        }
                     }
                     batch.Requests.Clear();
                     numberOfBatches++;
