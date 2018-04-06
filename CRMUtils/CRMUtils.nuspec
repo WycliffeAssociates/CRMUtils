@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Wycliffeassociates.CRMUtils</id>
+    <version>$version$</version>
+    <title>CRMUtils</title>
+    <authors>@rbnswartz</authors>
+    <owners>@rbnswartz</owners>
+    <projectUrl>https://github.com/WycliffeAssociates/CRMUtils/</projectUrl>
+    <licenseUrl>https://github.com/WycliffeAssociates/CRMUtils/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A set of helper functions for Dynamics CRM</description>
+    <summary>A set of helper functions for Dynamics CRM</summary>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright Wycliffe Associates 2018</copyright>
+    <tags>Dynamics CRM</tags>
+  </metadata>
+</package>
